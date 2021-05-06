@@ -1,0 +1,32 @@
+**ArrayList**
+
+import java.util.ArrayList;
+
+1.add(value)
+2.get(index)
+3.set(index, value) //to update
+4.remove(index)
+5.contains(value) // return boolean
+
+iteration
+    we can use normal "for" loop
+    or we can use "Iterator"
+
+**Iterator**
+    Iterator is an interface available in Collection framework
+    It supports both READ and REMOVE Operations.
+
+    It has four methods
+    1. boolean hasNext():Returns true if the iteration has more elements.
+    
+    2. E next(): Returns the next element in the iteration.
+
+    3. default void remove(): Removes from the underlying collection the last element returned by this iterator.
+
+    4. default void forEachRemaining(Consumer action): Performs the given action for each remaining element until all elements have been processed or the action throws an exception.
+
+    Iterator<String> object = list_name.iterator(); //create iterator object
+
+        while(object.hasNext()){
+		    System.out.println(object.next());			
+	        }	
