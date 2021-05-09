@@ -1,0 +1,62 @@
+Read : http://tutorials.jenkov.com/java/enums.html
+Read : https://crunchify.com/why-and-for-what-should-i-use-enum-java-enum-examples/
+The Enum in Java is a data type which contains a fixed set of constants.
+constants are defined in Capital letters
+Enum constants are public, static and final.
+we can define an enum either inside the class or outside the class.
+Implement many interfaces but cannot extend any class because it internally extends Enum class.
+
+Loop Through an Enum
+    enum type has a "values()" method
+
+    public enum Season { WINTER, SPRING, SUMMER, FALL }  
+
+    for (Season myVar : Season.values()) { //enum type is required to access
+        System.out.println(myVar);
+    }
+
+2. valueOf() //return value
+3. ordinal() //return index
+
+System.out.println("Value of WINTER is: "+Season.valueOf("WINTER"));  
+System.out.println("Index of WINTER is: "+Season.valueOf("WINTER").ordinal());  
+
+output
+Value of WINTER is: WINTER
+Index of WINTER is: 0
+
+Enum can have fields, constructors, and methods.
+    The enum constants have an initial value which starts from 0, 1, 2, 3, and so on. 
+    But, we can initialize the specific value to the enum constants by defining fields and constructors.
+
+    Constructor of enum type is private.
+
+    Example:
+
+    class EnumExample{
+
+        enum Season {
+            WINTER(30), SUMMER(90), SPRING(100);
+        
+
+            private int value; //field
+
+            private Season(int value){ //Constructor
+            this.value = value;
+            }
+        }
+
+        public static void main(String args[]){  
+        for (Season s : Season.values())  
+        System.out.println(s+" "+s.value);  
+  
+        }
+
+    }
+
+    // output
+
+    WINTER 30
+    SPRING 90
+    SUMMER 100
+    

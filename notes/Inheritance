@@ -1,0 +1,10 @@
+ 1. to inherit property of another class.
+ 2. When a Class extends another class it inherits all " non-private " members including fields and methods.
+ 3. "extends" and "implements" keywords are used.
+ 
+ 4. It promotes the code reusabilty
+ 5. It promotes polymorphism by allowing method overriding.
+
+ Disadvantages 
+    tightly coupled
+

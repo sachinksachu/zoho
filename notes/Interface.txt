@@ -1,0 +1,12 @@
+ 1.allows multiple inheritance
+ 2.All variables declared inside interface are implicitly public, static and final.
+ 3.Methods inside interface must not be static, final, 
+ 4.It is used to achieve full abstraction.All method in 'Interface' should be defined in sub class.
+5.Cannot create instance of an Interface.
+6.Interface can extend one or more other interface.But in this case, interface just inherit, does not provide implementation. 
+Implementation can be provided by a class only.
+An Interface can not contain a constructor methods.
+
+7.It can have only abstract methods and static fields. 
+ However, from Java 8, interface can have default and static methods and 
+ from Java 9, it can have private methods as well.
