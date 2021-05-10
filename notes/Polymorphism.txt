@@ -1,0 +1,5 @@
+https://beginnersbook.com/2013/05/method-overloading/
+
+https://beginnersbook.com/2014/01/method-overriding-in-java-with-example/
+1. We cannot override the method declared as final and static.
+2. To access the method of the superclass from the subclass, we use the "super" keyword.

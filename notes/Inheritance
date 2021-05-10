@@ -3,8 +3,20 @@
  3. "extends" and "implements" keywords are used.
  
  4. It promotes the code reusabilty
- 5. It promotes polymorphism by allowing method overriding.
+ 5. It promotes "polymorphism" by allowing "method overriding".
+
+ 6. We cannot extend the final class.
 
  Disadvantages 
     tightly coupled
 
+7. constructor
+      when sub class is instantiated, the constructor with no parameter in Parent class is called first then the Child constructor.
+      if we want to call parameterized constructor of base class, then we can call it using super().
+8. Why multiple inheritance is not supported in java?
+
+   The C class inherits A and B classes. If A and B classes have the same method and you call it from child class object, 
+   there will be ambiguity to call the method of A or B class. [compile time error]
+
+9. Super keyword
+      https://beginnersbook.com/2014/07/super-keyword-in-java-with-example/

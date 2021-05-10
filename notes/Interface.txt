@@ -10,3 +10,6 @@ An Interface can not contain a constructor methods.
 7.It can have only abstract methods and static fields. 
  However, from Java 8, interface can have default and static methods and 
  from Java 9, it can have private methods as well.
+
+ 8. How interface achieve abstraction : https://www.tutorialspoint.com/how-abstraction-is-achieved-using-interfaces-in-java
+    https://stackoverflow.com/questions/34954592/how-can-interface-achieve-100-abstraction-in-java
