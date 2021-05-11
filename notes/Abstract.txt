@@ -1,0 +1,8 @@
+https://beginnersbook.com/2013/05/java-abstract-class-method/
+
+1. A class that is declared using “abstract” keyword is known as abstract class. 
+2. It can have "abstract" methods(methods without body) as well as concrete methods (regular methods with body). 
+3. An abstract class can not be instantiated, which means you are not allowed to create an object.
+4. child classes will and should override the method in parent,
+5. Abstract class cannot be instantiated which means you cannot create the object of it. 
+    To use this class, you need to create another class that extends this this class and provides the implementation of abstract methods
