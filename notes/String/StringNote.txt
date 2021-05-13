@@ -1,0 +1,2 @@
+String Pool
+https://www.edureka.co/blog/java-string-pool/
