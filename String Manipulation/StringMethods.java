@@ -39,17 +39,7 @@ public class StringMethods {
 
 
     }
-    public static void main(String[] args) {
-        String name = "Antonio Mercile Aziz";
-
-        System.out.println(name);
-        
-        //indexOf
-        System.out.println("Index of Mercile : "+name.indexOf("Mercile"));//index of starting letter 
-
-        //charAt
-        System.out.println("character at Index 16: "+name.charAt(16));//
-
+    public static void main(String[] args) { 
         //compare String
         StringCompare();
     }
