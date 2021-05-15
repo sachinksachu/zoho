@@ -1,2 +1,6 @@
 String Pool
 https://www.edureka.co/blog/java-string-pool/
+
+Immutable
+https://dzone.com/articles/string-why-it-is-immutable
+

@@ -1,0 +1,60 @@
+An Exception is an unwanted event that interrupts the normal flow of the program.
+
+Exceptions are, after all, simply Java "objects" that extend the "Throwable" interface:
+
+                                        ---> Throwable <--- 
+                                        |    (checked)     |
+                                        |                  |
+                                        |                  |
+                                ---> Exception           Error
+                                |    (checked)        (unchecked)
+                                |
+                          RuntimeException
+                            (unchecked)
+
+
+ 1.Checked Exceptions
+
+    i. All exceptions other than Runtime Exceptions 
+    ii. as the compiler checks them during compilation to see whether the programmer has handled them or not.
+    Eg: SQLException, IOException, ClassNotFoundException 
+
+ 2.Unchecked Exceptions / Runtime Exceptions
+
+    These exceptions are not checked at compile-time
+    Eg : ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException 
+    
+ 3.Errors
+
+Try catch
+https://www.javatpoint.com/try-catch-block
+
+we can specify "Exception" class as parameter in catch
+   catch(Exception exp){
+            System.out.println("I/O error occurred: "+exp);
+
+Multiple catch
+https://www.javatpoint.com/multiple-catch-block-in-java
+//At a time only one exception occurs and at a time only one catch block is executed.
+//All catch blocks must be ordered from most specific to most general, 
+//i.e. catch for ArithmeticException must come before catch for Exception.
+
+Nested try
+https://www.javatpoint.com/nested-try-block
+
+Finally
+https://www.javatpoint.com/finally-block-in-exception-handling
+Java finally block is a block that is used to execute important code such as closing connection, stream etc.
+Java finally block is always executed whether exception is handled or not.
+For each try block there can be zero or more catch blocks, but only one finally block. 
+The finally block will not be executed if program exits(either by calling System.exit() or by causing a fatal error that causes the process to abort).
+
+Throw & Throws
+https://www.geeksforgeeks.org/throw-throws-java/
+
+throw
+The throw keyword in Java is used to explicitly throw an exception from a method or any block of code.
+
+throws
+throws is a keyword in Java which is used in the signature of method to indicate that this method might throw one of the listed type exceptions. 
+The caller to these methods has to handle the exception using a try-catch block. 

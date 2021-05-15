@@ -14,5 +14,7 @@ public class Example5 {
 
         //toLowerCase
         System.out.println("Lower case : "+normalCase.toLowerCase());
+
+        
     }
 }
