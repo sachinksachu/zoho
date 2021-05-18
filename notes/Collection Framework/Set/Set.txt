@@ -1,0 +1,7 @@
+extends ('AbstractSet' which implements 'Set interface') and uses a hash table for storage. 
+
+1. stores the elements by using a mechanism called 'hashing'.
+2. HashSet contains unique elements only, "no duplicates"
+3. HashSet allows null value & non- sync.
+4. doesn't maintain the insertion order
+5. is the best approach for 'search' operations.

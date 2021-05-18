@@ -1,8 +1,39 @@
 1. for storing Key & value pairs,
 2. HashMap<Key, Value>
-3. It is not an ordered collection which means it does not return the keys and values in the same order in which 
-    they have been inserted into the HashMap. 
+3.
 4. It does not sort the stored keys and Values
+5. cannot contain duplicate keys.
 
+1. HashMap, (makes no guarantees concerning the order of iteration)
+2. TreeMap (stores its elements in a red-black tree, orders of elements based on their values; it is substantially slower than HashMap.
+3. LinkedHashMap.(t orders its elements based on the order in which they were inserted )
+
+
+1. HashMap
+https://www.javatpoint.com/java-hashmap
 import java.util.HashMap;
 
+0. It inherits the 'AbstractMap' class and implements the 'Map' interface
+1. not synchronized
+2. It allows us to store the null elements as well, but there should be only one null key.
+3. maintains no order.
+
+2.LinkedHashMap
+https://www.javatpoint.com/java-linkedhashmap
+
+0. extends 'HashMap' and implements 'Map' interface
+1. LinkedHashMap maintains insertion order. 
+2. one null key and multiple null values.
+3. not synchronized
+
+HashMap vs LinkedHashMap
+    https://www.javatpoint.com/linkedhashmap-vs-hashmap-in-java
+    1. quite similar to HashMap, with an additional feature of maintaining the order of the inserted element.
+    2. The HashMap requires low memory than LinkedHashMap
+
+3. TreeMap 
+    0.It provides an efficient means of storing key-value pairs in sorted order of keys. 
+    1. extends 'AbstractMap' and implements 'NavigableMap' interface
+    2. cannot have a null key but can have multiple null values.
+    3. maintains ascending order of keys.
+    4. performance of log(n)
