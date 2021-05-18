@@ -1,0 +1,8 @@
+1. for storing Key & value pairs,
+2. HashMap<Key, Value>
+3. It is not an ordered collection which means it does not return the keys and values in the same order in which 
+    they have been inserted into the HashMap. 
+4. It does not sort the stored keys and Values
+
+import java.util.HashMap;
+

@@ -1,6 +1,10 @@
 **ArrayList**
-
+sort() method in the Collections class.
+1. Arraylist class implements "List" interface 
+2. ArrayList can dynamically grow and shrink
 import java.util.ArrayList;
+
+ArrayList<String> list = new ArrayList<String>();
 
 1.add(value)
 2.get(index)

@@ -1,0 +1,7 @@
+1. Array List
+2. Linked List 
+3. Vector
+
+Lists may contain duplicate elements.
+Elements can be inserted or accessed by their position in the list,
+ArrayList and LinkedList and Vector are implementation of 'List' interface.
