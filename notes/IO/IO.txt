@@ -1,0 +1,19 @@
+streams are the sequence of data that are read from the source and written to the destination.
+
+Types of Streams
+1. Byte Stream [Byte stream is used to read and write a single byte (8 bits) of data.]
+2. Character Stream [Character stream is used to read and write a single character of data.]
+
+ByteStream
+    1. All byte stream classes are derived from base abstract classes called 'InputStream' and 'OutputStream'.
+
+Character Stream
+    1. All the character stream classes are derived from base abstract classes 'Reader' and 'Writer'.
+
+Combining Stream
+    reading every byte one at a time from a file is slow. 
+    It is faster to read a larger block of data from the disk and then iterate through that block byte for byte afterwards.
+    To achieve buffering you can wrap your InputStream in an BufferedInputStream.
+
+    example : InputStream input = new BufferedInputStream(new FileInputStream("c:\\data\\input-file.txt"));
+                        

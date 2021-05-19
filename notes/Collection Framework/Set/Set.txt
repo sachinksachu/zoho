@@ -1,7 +1,30 @@
-extends ('AbstractSet' which implements 'Set interface') and uses a hash table for storage. 
+extends ('AbstractSet' which implements 'Set interface') and uses a hash table for storage.(Cloneable, Serializable )
 
 1. stores the elements by using a mechanism called 'hashing'.
 2. HashSet contains unique elements only, "no duplicates"
 3. HashSet allows null value & non- sync.
 4. doesn't maintain the insertion order
 5. is the best approach for 'search' operations.
+
+
+2. LinkedHashSet
+    1. extends "HashSet" and implements "Set interface"
+    2. Duplicate values are not allowed
+    3. One NULL element is allowed 
+    4. It is an ordered collection which is the order in which elements were inserted
+    5. offers constant time performance for the basic operations(add, remove, contains and size).
+    6. not sync
+    7.
+
+3. TreeSet
+    1. extends 'AbstractSet' and implements 'NavigableSet interface'.
+    2.  except it stores the element in sorted order.
+
+    class TreeSet<E> extends AbstractSet<E> 
+                implements NavigableSet<E>, Cloneable, Serializable 
+        {
+        //implementation
+        }
+    3. NULL is not allowed in TreeSet.
+    4. ordered collection which store the elements in sorted order.
+    
