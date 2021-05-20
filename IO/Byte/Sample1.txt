@@ -1,0 +1,1 @@
+ The Java RandomAccessFile class in the Java IO API allows you to move navigate a file and read from it or write to it as you please.
