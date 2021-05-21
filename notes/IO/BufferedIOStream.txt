@@ -1,0 +1,25 @@
+BufferedInputStream
+
+1. java.io.BufferedInputStream, provides 'transparent reading of chunks of bytes' and 'buffering' for a Java InputStream.
+2. Reading larger chunks of bytes and buffering them can speed up IO quite a bit.
+3. BufferedInputStream reads a larger block at a time into an internal buffer.
+4. When you read a byte from the Java 'BufferedInputStream' you are therefore reading it from its 'internal buffer'.
+5. When the buffer is fully read, the BufferedInputStream reads another larger block of data into the buffer.  
+6. The BufferedInputStream maintains an internal buffer of 8192 bytes.
+However, we can specify the size of the internal buffer as well.
+        new BufferInputStream(file, int size);
+
+
+During the read operation in BufferedInputStream, a chunk of bytes is read from the disk and stored in the internal buffer. 
+And from the internal buffer bytes are read individually.
+Hence, the number of communication to the disk is reduced. 
+This is why reading bytes is faster using the BufferedInputStream.
+
+examle : https://www.programiz.com/java-programming/bufferedinputstream
+
+
+BufferedOutputStream
+
+1.The BufferedOutputStream maintains an internal buffer of 8192 bytes.
+During the write operation, the bytes are written to the internal buffer instead of the disk.
+ Once the buffer is filled or the stream is closed, the whole buffer is written to the disk.

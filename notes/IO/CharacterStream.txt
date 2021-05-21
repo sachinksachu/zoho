@@ -1,0 +1,51 @@
+The java.io package provides 'CharacterStream' classes to overcome the limitations of ByteStream classes, 
+which can only handle the 8-bit bytes and is not compatible to work directly with the Unicode characters. 
+
+CharacterStream classes are used to work with 16-bit Unicode characters. 
+They can perform operations on characters, char arrays and Strings.
+
+https://www.javatpoint.com/characterstream-classes-in-java
+
+Divided into two
+    1. Reader class
+    2. Writer class
+
+1. Reader
+
+    BufferedReader
+    InputStreamReader
+    FileReader
+    StringReader
+
+    1.InputStreamReader
+        i) is a bridge from byte streams to character streams:
+        ii) It reads bytes and decodes them into "characters" using a specified charset. 
+        iii) we can specify the type of character encoding (UTF8 or UTF16) in the file as well.
+
+    2. FileReader
+        i) used to read data (in characters) from files.
+        ii) It extends the InputSreamReader class.
+        
+        to create file Reader
+            1.FileReader input = new FileReader(String name);
+            2.FileReader input = new FileReader(File fileObj);
+        specify encoding
+            FileReader input = new FileReader(String file, Charset cs);
+
+2. Writer
+    
+    1.OutputStreamWriter
+
+    write() - writes a single character to the writer
+    write(char[] array) - writes the characters from the specified array to the writer
+    write(String data) - writes the specified string to the writer
+
+    2. FileWriter
+
+    write() - writes a single character to the writer
+    write(char[] array) - writes the characters from the specified array to the writer
+    write(String data) - writes the specified string to the writer
+
+
+
+

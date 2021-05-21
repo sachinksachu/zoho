@@ -37,3 +37,6 @@ public class ByteArrayToStreamJava {
 }
 
 //note : the ByteArrayInputStream class can turn a byte array into an InputStream.
+// methods
+    //1. skip(int n) : skip 'n' bytes from input stream
+    //2. mark & reset() 
