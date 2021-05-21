@@ -32,6 +32,12 @@ Divided into two
         specify encoding
             FileReader input = new FileReader(String file, Charset cs);
 
+    3. BufferedReader
+
+        BufferReader readLine() returns String, terminate at "\n" or "\r".
+        BufferReader read() returns single character.
+        BufferReader read(CharBuffer target) , returns no. of characters read or -1 
+
 2. Writer
     
     1.OutputStreamWriter
@@ -49,3 +55,9 @@ Divided into two
 
 
 
+
+
+https://stackoverflow.com/questions/4367539/what-is-the-difference-between-reader-and-inputstream
+"InputStreams" are used to read bytes from a stream. So they are useful for binary data such as images, video and serialized objects.
+
+"Readers" on the other hand are character streams so they are best used to read character data.

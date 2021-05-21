@@ -1,1 +1,4 @@
-This is the data in the output file
+BufferReader readLine() returns String, terminate at "\n" or "\r".
+BufferReader read() returns single character.
+BufferReader read(CharBuffer target) , returns no. of characters read or -1 cCCCA
+RahulNEWYORk

@@ -26,6 +26,12 @@ public class IOStreamReader {
           System.out.println("Character encoding of input2: " + input2.getEncoding());
 
           // Reads characters from the file
+
+          //read()
+          // returns int, read single character at at time
+          System.out.println("first character is : "+(char)input.read());// convert into char
+
+          //read(char[]) stroes into array
           input.read(array,0,40);
           System.out.println("Data in the stream:");
           System.out.println(array);
