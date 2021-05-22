@@ -1,0 +1,4 @@
+1. show databases;
+2. use "database_name";
+3. execute .sql file
+    source /path/to/file.sql;

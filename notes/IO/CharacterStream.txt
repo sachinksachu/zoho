@@ -38,6 +38,10 @@ Divided into two
         BufferReader read() returns single character.
         BufferReader read(CharBuffer target) , returns no. of characters read or -1 
 
+    4. StringReader
+        StringReader class enables you to turn an ordinary String into a Reader
+        This is useful if you have data as a String but need to pass that String to a component that only accepts a Reader. 
+
 2. Writer
     
     1.OutputStreamWriter
@@ -52,9 +56,19 @@ Divided into two
     write(char[] array) - writes the characters from the specified array to the writer
     write(String data) - writes the specified string to the writer
 
+    3.
+
+    4. StringWriter
+         The Java StringWriter class (java.io.StringWriter) enables you to obtain the characters written to a Writer as a String. 
+         The StringWriter is useful if you have a component that only can write data to a Writer but you need that data as a String. 
+         In Java, string buffer is considered as a mutable string. That is, we can modify the string buffer. 
+            To convert from string buffer to string, we can use the toString() method.
 
 
-
+    5. PrintWriter
+        enables you to write formatted data to an underlying Writer. 
+        writing int, long and other primitive data formatted as text, rather than as their byte values.
+        The Java PrintWriter is useful if you are generating reports (or similar) where you have to mix text and numbers
 
 
 https://stackoverflow.com/questions/4367539/what-is-the-difference-between-reader-and-inputstream
