@@ -2,3 +2,60 @@
 2. use "database_name";
 3. execute .sql file
     source /path/to/file.sql;
+
+TCL
+A transaction is a logical unit of work that contains one or more SQL statements. ... A transaction ends when it is committed or rolled back, 
+either explicitly with a COMMIT or ROLLBACK statement or implicitly when a DDL statement is issued.
+
+The transaction contains mainly four properties, which referred to as ACID property.
+1. Atomicity
+2. Consistency
+3, Isolation
+4. Durability
+
+By default, MySQL automatically commits the changes permanently to the database. 
+To force MySQL not to commit changes automatically, you use the following statement:
+    SET autocommit = 0; 
+
+
+Data Types
+1. String
+    CHAR(size) : it can have a maximum size of 255 characters.
+    VARCHAR(size) : It can have a maximum size of 255 characters.
+    TEXT(size) : Maximum size of 65,535 characters.
+    MEDIUMTEXT(size) :  maximum size of 16,777,215 characters.
+    LONGTEXT(size) :  4GB 
+
+    BINARY(size) : 255 binary characters
+    VARBINARY(size) : 255 binary characters
+
+    ENUM : 1 or 2 bytes : each column may have one of the specified possible values. It uses numeric indexes (1, 2, 3…) to represent string values.
+
+ 2. Binary Large Object (BLOB)
+    store binary data
+    they can be used to store images or other multimedia files.
+    
+    TINYBLOB 	It can hold a maximum size of 255 bytes.
+    BLOB(size) 	It can hold the maximum size of 65,535 bytes.
+    MEDIUMBLOB 	It can hold the maximum size of 16,777,215 bytes.
+    LONGBLOB 	It can hold the maximum size of 4gb or 4,294,967,295 bytes   
+
+3. Date and Time 
+    Date : Values range from '1000-01-01' to '9999-12-31'. : Displayed as 'yyyy-mm-dd'. It takes 3 bytes for storage. 
+    Time : Values range from '-838:59:59' to '838:59:59'. : Displayed as 'HH:MM:SS'. It takes 3 bytes
+    DateTime : Values range from '1000-01-01 00:00:00' to '9999-12-31 23:59:59'. : yyyy-mm-dd hh:mm:ss 
+    TimeStamp : Values range from '1970-01-01 00:00:01' UTC to '2038-01-19 03:14:07' :  Displayed as 'YYYY-MM-DD HH:MM:SS'. It takes 4 bytes 
+    Year(2|4) : 0-99 or 1901-2155 
+
+4. Numeric
+    TINYINT : signed or unsigned, -128 to 127. If unsigned, the allowable range is from 0 to 255.
+    SMALLINT : signed or unsigned, -32768 to 32767. If unsigned, the allowable range is from 0 to 65535. width of up to 5 digits
+    MEDIUMINT : signed or unsigned,  9 digits. width of up to 9 digits
+    INT : pecify a width of up to 11 digits. signed or unsigned, width of up to 11 digits
+    BIGINT : can be signed or unsigned.  We can specify a width of up to 20 digits. It requires 8 bytes for storage.
+    FLOAT(m,d) :  Decimal precision can go to 24 places for a float type. 
+    DOUBLE(m,d) : Decimal precision can go to 53 places for a double. 
+    DECIMAL(m,d) : display length (m) and the number of decimals (d) is required.  
+    BIT :   It is used for storing bit values 
+    BOOL :  It is used only for the true and false condition
+    BOOLEAN : It is used only for the true and false condition

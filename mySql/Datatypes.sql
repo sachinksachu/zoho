@@ -1,0 +1,1 @@
+CREATE TABLE STRING_TYPES(Gender char(6), Name varchar(25), Address text , Married enum('yes','no'))
