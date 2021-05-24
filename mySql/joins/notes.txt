@@ -1,0 +1,8 @@
+JOINS in SQL are commands which are used to combine rows from two or more tables, based on a related column between those tables. 
+ There are predominantly used when a user is trying to extract data from tables which have one-to-many or many-to-many relationships between them.
+
+ 1. INNER JOIN
+ 2. FULL JOIN
+ 3. LEFT JOIN 
+ 4. RIGHT JOIN
+ 

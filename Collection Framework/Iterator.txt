@@ -1,0 +1,15 @@
+Iterator is an object that can be used to loop through collections
+
+Iterator<T> it = Collection.iterator();
+
+to loop through a collection, use the hasNext() and next() methods
+while(it.hasNext()) {
+  System.out.println(it.next());
+}
+
+remove()
+
+while(it.hasNext()) {
+  if(it.next() < 10)
+    it.remove();
+}

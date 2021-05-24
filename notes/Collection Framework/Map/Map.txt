@@ -37,3 +37,9 @@ HashMap vs LinkedHashMap
     2. cannot have a null key but can have multiple null values.
     3. maintains ascending order of keys.
     4. performance of log(n)
+
+4. Hashtable
+    implements 'Map' interface
+    It is similar to HashMap, but is synchronized.(can be used in multi threading env.)
+    Hashtable do not allow null keys and null values in the Hashtable object.
+    The key is then hashed, and the resulting hash code is used as the index at which the value is stored within the table.

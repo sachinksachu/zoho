@@ -58,4 +58,4 @@ Data Types
     DECIMAL(m,d) : display length (m) and the number of decimals (d) is required.  
     BIT :   It is used for storing bit values 
     BOOL :  It is used only for the true and false condition
-    BOOLEAN : It is used only for the true and false condition
+    BOOLEAN : It is used only for the true and false condition, but stores TINYINT(1), stores 1 or 0.

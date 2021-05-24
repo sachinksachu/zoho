@@ -28,3 +28,11 @@ extends ('AbstractSet' which implements 'Set interface') and uses a hash table f
     3. NULL is not allowed in TreeSet.
     4. ordered collection which store the elements in sorted order.
     
+4. SortedSet (interface)
+    stores all the elements in this interface to be stored in a sorted manner.
+    Since SortedSet is an interface, objects cannot be created of the type SortedSet.
+        SortedSet<Obj> set = new TreeSet<Obj> ();
+    null value not accepted
+    the class which implements the SortedSet interface is 'TreeSet'.
+
+    Set(interface) <-- SortedSet(interface) <-- NavigableSet(interface) <== TreeSet(class)
