@@ -40,6 +40,7 @@ public class BinaryTree2 {
       }
       return node;
     }
+
     // Search node in binary search tree
     public Node find(int searchedValue){
       Node current = root;
@@ -50,6 +51,7 @@ public class BinaryTree2 {
         else
           // Move to the right if searched value is >=
           current = current.right;
+
         if(current == null){
           return null;
         }
@@ -90,14 +92,18 @@ public class BinaryTree2 {
       bst.insert(35);
       bst.insert(30);
       bst.insert(31);
+
       System.out.println("Inorder traversal of binary tree");
       bst.inOrder(bst.root);
       System.out.println();
-      Node node = bst.find(16);
+
+      Node node = bst.find(15);
       System.out.println((node == null)? "Node not found" : String.valueOf(node.value));
+
       System.out.println("Preorder traversal of binary tree");
       bst.preOrder(bst.root);
       System.out.println();
+
       System.out.println("Postorder traversal of binary tree");
       bst.postOrder(bst.root);
       System.out.println();

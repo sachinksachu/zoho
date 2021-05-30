@@ -1,0 +1,5 @@
+JSON is an open standard for exchanging data on the web
+it supports data structures like object and array
+JSON is language independent.
+
+https://www.javatpoint.com/json-tutorial

@@ -9,7 +9,8 @@ public class ByteArrayOutstreamJava {
         byte[] buffer = {'J', 'A', 'V', 'A'};
   
         // Use of write(byte[] buffer, int offset, int maxlen)
-        geek_output.write(buffer, 0, 4);
+        geek_output.write(buffer, 0, 4);//write to stream
+    
         System.out.print("Use of write(buffer, offset, maxlen) by toByteArray() : ");
   
         // Use of toByteArray() :

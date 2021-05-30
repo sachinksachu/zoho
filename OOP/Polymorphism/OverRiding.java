@@ -15,8 +15,11 @@ class Animal {
  
 public class OverRiding {
     public static void main(String[] args) {
-       Dog d1 = new Dog();
+       Animal d1 = new Dog(); //calls child method
        d1.displayInfo();
+
+      //  Animal d1 = new Animal(); //calls paremt method
+      //  d1.displayInfo();
     }
  }
  
