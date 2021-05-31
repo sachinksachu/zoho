@@ -19,7 +19,7 @@ public class CircularQ {
     }
 
     public boolean isEmpty(){
-        if(FRONT == -1 && REAR ==-1){
+        if(FRONT == REAR){
             System.out.print("Queue is Empty");
             return true;
         }
@@ -33,19 +33,13 @@ public class CircularQ {
         if(isFull()){
             return;
         }
-        else if(isEmpty()){
-            FRONT=0;
-            REAR = 0;
-            array[REAR] = value;
-            display();
-            return;
-        }
         // else if(REAR == SIZE-1 && FRONT !=0){
         //     REAR=(REAR+1)%SIZE;
         //     array[REAR] = value;
         //     return;
         // }
         else{
+
             REAR=(REAR+1)%SIZE;
             array[REAR] = value;
             display();
@@ -57,53 +51,59 @@ public class CircularQ {
             return;
         }
         else{
+            
             FRONT = (FRONT + 1)%SIZE;
+            
             display();
+            if(FRONT == REAR){
+                FRONT =-1;
+                REAR =-1;
+            }
             return;
         }
         
     }
 
-    void display() {
-        /* Function to display status of Circular Queue */
-        int i;
-        if (isEmpty()) {
-          System.out.println("Empty * Queue");
-        } else {
-          System.out.println("Front -> " + FRONT);
-          System.out.print("Items -> ");
-          for (i = FRONT; i != REAR; i = (i + 1) % SIZE)
-            System.out.print(array[i] + " ");
-          System.out.println(array[i]);
-          System.out.println("Rear -> " + REAR);
+    public void display() {
+        int curr = FRONT;
+        System.out.print("Queue state: ");
+        if (curr == REAR) { System.out.print("[empty]"); }
+        else while (curr != REAR) {
+          curr = (curr + 1) % array.length;
+          System.out.print(array[curr] + " ");
         }
-        return;
+        System.out.println();
       }
     public static void main(String[] args) {
         
         CircularQ cQueue = new CircularQ();
 
-        cQueue.enqueue(1);
-        cQueue.enqueue(2);
-        cQueue.enqueue(3);
-        cQueue.enqueue(4);
-        cQueue.enqueue(5);
-        cQueue.enqueue(6);
-        cQueue.enqueue(7);
-        cQueue.enqueue(8);
-        cQueue.enqueue(9);
-        cQueue.enqueue(10);
-
-        cQueue.dequeue();
-        cQueue.dequeue();
-        cQueue.dequeue();
-        cQueue.dequeue();
-
         cQueue.enqueue(100);
-        cQueue.enqueue(101);
-        cQueue.enqueue(102);
-        cQueue.enqueue(103);
-        cQueue.enqueue(104);
+        cQueue.enqueue(200);
+        cQueue.enqueue(300);
+        cQueue.enqueue(400);
+        cQueue.enqueue(500);
+        cQueue.enqueue(600);
+        cQueue.enqueue(700);
+        cQueue.enqueue(800);
+        cQueue.enqueue(900);
+        cQueue.enqueue(1780);
+
+        cQueue.dequeue();
+        cQueue.dequeue();
+        cQueue.dequeue();
+        cQueue.dequeue();
+        cQueue.dequeue();
+        cQueue.dequeue();
+        cQueue.dequeue();
+        cQueue.dequeue();
+        cQueue.dequeue();
+        cQueue.dequeue();
+        System.out.println("complete");
+        cQueue.dequeue();
+        cQueue.enqueue(898);
+
+        
 
         
     }
